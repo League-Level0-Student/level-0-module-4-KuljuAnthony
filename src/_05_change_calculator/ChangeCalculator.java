@@ -13,19 +13,22 @@ import javax.swing.JOptionPane;
 public class ChangeCalculator {
 
 	public static void main(String[] args) {
-
+      String bob=  JOptionPane.showInputDialog("how many nickels do you have");
 		// Ask the user how many nickels they have
-
+   double nickels = Integer.parseInt(bob);
+        
 		// Convert their answer to an int using Integer.parseInt()
-
+      String baob= JOptionPane.showInputDialog("how many dimes do you have");
 		// Ask the user how many dimes they have, and convert their answer
-
+    double dimes = Integer.parseInt(baob);
 		// Ask the user how many quarters they have, and convert their answer
-
+     String baoob= JOptionPane.showInputDialog("how many quarters do you have");
 		// Calculate how much money the user has and save it in a double variable 
-
+    double quarters = Integer.parseInt(baoob);
+      
 		// Tell the user how much money they have
-
+      double money = nickels/20 + dimes/10 + quarters/4;
+      JOptionPane.showMessageDialog(null, money);
 	}
 }
 
